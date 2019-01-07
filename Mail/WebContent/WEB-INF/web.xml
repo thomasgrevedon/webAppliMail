@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Mail</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Toto</servlet-name>
+    <servlet-class>afpa.mail.servlet.Toto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Toto</servlet-name>
+    <url-pattern>/Toto</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Mailtosend</servlet-name>
+    <servlet-class>afpa.mail.servlet.Mailtosend</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Mailtosend</servlet-name>
+    <url-pattern>/Mailtosend</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>CreerPersonne</servlet-name>
+    <servlet-class>afpa.mail.servlet.CreerPersonne</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreerPersonne</servlet-name>
+    <url-pattern>/CreerPersonne</url-pattern>
+  </servlet-mapping>
+</web-app>
