@@ -49,4 +49,10 @@ public class Services {
 		
 	}
 
+	public void jeFaisUneBonneFonction(String destinataire, String objet, String Message) throws AddressException, MessagingException, IOException {
+
+		SendMail.envoieMail(destinataire, objet, Message);
+		
+	}
+
 }
